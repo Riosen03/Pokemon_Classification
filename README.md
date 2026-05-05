@@ -10,11 +10,14 @@ Streamlit을 이용하여 사용자가 이미지를 업로드하면 포켓몬을
 
 ## Demo
 
-**GUI 구동 화면**
-![Demo](images/demo_screenshot.png) 
 
 **학습**
+
 ![Learning](images/learning.png)
+
+**GUI 구동 화면**
+
+![Demo](images/demo_screenshot.png) 
 
 ---
 
