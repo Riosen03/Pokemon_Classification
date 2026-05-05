@@ -23,6 +23,8 @@ Streamlit을 이용하여 사용자가 이미지를 업로드하면 포켓몬을
 
 ## 동작 과정 
 
+사전작업 - 7,000 Labeled Pokemon (# of classes: 150), Kaggle에서 dataset을 다운받아 PokemonData 디렉토리 아래에 각 포켓몬 디렉토리가 존재하게 설정
+
 1. 데이터 전처리 및 분할 (training.py)
    - torchvision.datasets.ImageFolder를 사용하여 데이터를 로드
    - scikit-learn의 train_test_split을 활용하여 전체 데이터를 Train 80%, Validation 20%로 클래스 비율에 맞춰 분할
