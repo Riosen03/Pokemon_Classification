@@ -5,7 +5,7 @@ from torchvision import models, transforms
 import torch.nn as nn
 import os
 
-st.title("⚡ Pokemon Classifier")
+st.title("Pokemon Classifier")
 st.write("이미지를 업로드하면 전이 학습된 CNN 모델이 포켓몬의 이름을 예측합니다.")
 
 data_dir = './PokemonData'
@@ -45,7 +45,7 @@ if uploaded_file is not None:
         
     top5_prob, top5_catid = torch.topk(probabilities, 5)
     
-    st.subheader("🎯 예측 결과 (Top-5)")
+    st.subheader("예측 결과 (Top-5)")
     for i in range(5):
         name = class_names[top5_catid[i].item()]
         prob = top5_prob[i].item() * 100
